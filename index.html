@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cash Loan Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Cash Loan Management System</h1>
+
+<h2>Add Client</h2>
+<input type="text" id="clientName" placeholder="Client Name">
+<input type="text" id="clientPhone" placeholder="Phone Number">
+<button onclick="addClient()">Add Client</button>
+
+<h2>Give Loan</h2>
+<input type="text" id="loanClient" placeholder="Client Name">
+<input type="number" id="loanAmount" placeholder="Loan Amount">
+<input type="number" id="interestRate" placeholder="Interest %">
+<button onclick="giveLoan()">Give Loan</button>
+
+<h2>Record Payment</h2>
+<input type="text" id="paymentClient" placeholder="Client Name">
+<input type="number" id="paymentAmount" placeholder="Amount Paid">
+<button onclick="recordPayment()">Record Payment</button>
+
+<h2>Loan Records</h2>
+<table border="1">
+<thead>
+<tr>
+<th>Client</th>
+<th>Loan</th>
+<th>Interest</th>
+<th>Total</th>
+<th>Paid</th>
+<th>Balance</th>
+</tr>
+</thead>
+
+<tbody id="loanTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
